@@ -16,6 +16,7 @@ def get_data(days):
     temperature = [i * days for i in temperature]
     return dates, temperature
 
+
 dates, temperature = get_data(days)
 
 figure = px.line(x=dates,y=temperature,labels={'x' : 'Dates','y' : 'Temperature(C)'})
